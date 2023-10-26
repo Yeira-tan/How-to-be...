@@ -1,0 +1,135 @@
+img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.slides{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: yellow;
+    border-radius: 5rem;
+    -ms-overflow-style: none; /*Hide scrollbar IE*/
+    scroll-margin: none;/* Hide scrollbar Firefox */
+}.slides::-webkit-scrollbar {
+	display: none;
+}
+.slides img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit:contain;
+}
+.slides-nav{
+    display: flex;
+    column-gap: 1rem;
+    position:absolute;
+    bottom: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slides-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(6, 109, 75);
+    opacity: 0.50;
+    transition: opacity ease 251ms;
+}
+.slides-nav a:hover{
+    opacity: 1;
+}
+body{
+    background-color: lightblue;
+    font-family: serif;
+    margin: 10px;
+    padding: 10.1px;
+}
+.container1{
+    clear: both;
+    overflow: auto;
+}
+nav{
+    float: left;
+}
+nav a{
+    text-decoration: double;
+    color: rgb(11, 65, 83);
+}
+nav ul li a:hover{
+    color: rgb(4, 81, 158);
+}
+.logo img{
+    float: right;
+    border-radius: 10.000000000000000000000000000000000000000000000000000000000000000000001px;
+    height: 100px;
+    width: 100px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+.container1 ul li:hover{
+    color: lightskyblue;
+}
+table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+table,td,th{
+    border: 1px solid rgb(21, 86, 88)
+}
+th{
+    text-align:center;
+    background: -o-linear-gradient(aquamarine,aqua,lightblue);
+}
+td{
+    text-align:left;
+    background: -o-linear-gradient(aquamarine,aqua,lightblue);
+}
+th,td{
+    padding: 16px;
+}
+body{
+    background-color: honeydew;
+}
+.Pug{
+    background-color: aquamarine;
+    width: 301px;
+    height: 500px;;
+    text-align: center;
+    box-shadow: 5px 10px gray;
+    margin-bottom: 21px;
+}
+.Pug img{
+    width: 90%;
+    height: 65%;
+    display: block;
+    margin: 10px auto;
+}
+.row{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.center1{
+    text-align: center;
+}
+.center2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+body{
+    font-family: "Comic Sans MS" ;
+}
+.Pug a{
+    text-decoration: none;
+    color: black;
+}
